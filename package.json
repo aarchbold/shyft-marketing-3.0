@@ -1,0 +1,16 @@
+{
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aarchbold/shyft-marketing-3.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-cli": "^2.0.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-file-include": "^2.0.1",
+    "gulp-ruby-sass": "^3.0.0",
+    "gulp-uglify": "^3.0.1",
+    "sass": "^1.13.4"
+  }
+}
