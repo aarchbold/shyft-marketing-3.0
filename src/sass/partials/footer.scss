@@ -17,34 +17,72 @@
 }
 
 .footer-row {
+    position: relative;
     &:after {
         content: '';
         clear: both;
         display: table;
+    }
+    @media (max-width: $breakpoint-650) {
+        padding-bottom: 100px;
     }
 }
 
 .footer-download-link {
     float: left;
     width: 30%;
+    @media (max-width: $breakpoint-940) {
+        width: 40%;
+    }
+    @media (max-width: $breakpoint-650) {
+        float: none;
+        width: 100%;
+    }
 }
 
 .footer-download-link__form {
     margin-bottom: 20px;
-
     input {
         margin-right: 6px;
+    }
+    @media (max-width: $breakpoint-650) {
+        position: relative;
+        margin-bottom: 40px;
+        padding-right: 60px;
+        input {
+            box-sizing: border-box;
+            margin-right: 0;
+            width: 100%;
+        }
+        .button {
+            position: absolute;
+            right: 0;
+            bottom: -1px;
+        }
     }
 }
 
 .footer-app-links {
     margin-bottom: 40px;
+    @media (max-width: $breakpoint-650) {
+        text-align: center;
+        position: absolute;
+        bottom: -120px;
+        width: 100%;
+    }
 }
 
 .footer-app-links__item {
     padding-right: 6px;
     img {
         width: 108px;
+    }
+}
+
+.footer-social-container {
+    @media (max-width: $breakpoint-650) {
+        position: absolute;
+        bottom: 0;
     }
 }
 
@@ -73,6 +111,13 @@
         clear: both;
         display: table;
     }
+    @media (max-width: $breakpoint-940) {
+        width: 60%;
+    }
+    @media (max-width: $breakpoint-650) {
+        float: none;
+        width: 100%;
+    }
 }
 
 .footer-text-links__col {
@@ -80,6 +125,13 @@
     width: 25%;
     box-sizing: border-box;
     padding-left: 15px;
+    @media (max-width: $breakpoint-940) {
+        width: 50%;
+    }
+    @media (max-width: $breakpoint-650) {
+        padding-left: 0;
+        padding-right: 10px;
+    }
 }
 
 .h2-footer {
@@ -99,10 +151,14 @@
 .footer-legal {
     position: relative;
     border-top: 1px solid $color-footer-border;
-    margin-top: 40px;
+    margin-top: 20px;
     font-size: 13px;
     text-align: right;
     padding: 20px 0 10px;
+    @media (max-width: $breakpoint-650) {
+        text-align: center;
+        padding: 82px 0 18px;
+    }
 }
 
 .shyft-logo-footer {
@@ -110,8 +166,21 @@
     left: 0;
     top: 10px;
     width: 116px;
+    @media (max-width: $breakpoint-650) {
+        display: none;
+    }
 }
 
 .footer-legal-link {
     padding-left: 20px;
+    @media (max-width: $breakpoint-650) {
+        padding: 0 10px;
+    }
+    &.-copyright {
+        @media (max-width: $breakpoint-650) {
+            position: absolute;
+            bottom: 0;
+            padding: 0;
+        }
+    }
 }

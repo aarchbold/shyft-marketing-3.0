@@ -95,15 +95,34 @@ body {
   color: #FC5858;
 }
 
+.footer-row {
+  position: relative;
+}
 .footer-row:after {
   content: '';
   clear: both;
   display: table;
 }
+@media (max-width: 650px) {
+  .footer-row {
+    padding-bottom: 100px;
+  }
+}
 
 .footer-download-link {
   float: left;
   width: 30%;
+}
+@media (max-width: 940px) {
+  .footer-download-link {
+    width: 40%;
+  }
+}
+@media (max-width: 650px) {
+  .footer-download-link {
+    float: none;
+    width: 100%;
+  }
 }
 
 .footer-download-link__form {
@@ -112,9 +131,34 @@ body {
 .footer-download-link__form input {
   margin-right: 6px;
 }
+@media (max-width: 650px) {
+  .footer-download-link__form {
+    position: relative;
+    margin-bottom: 40px;
+    padding-right: 60px;
+  }
+  .footer-download-link__form input {
+    box-sizing: border-box;
+    margin-right: 0;
+    width: 100%;
+  }
+  .footer-download-link__form .button {
+    position: absolute;
+    right: 0;
+    bottom: -1px;
+  }
+}
 
 .footer-app-links {
   margin-bottom: 40px;
+}
+@media (max-width: 650px) {
+  .footer-app-links {
+    text-align: center;
+    position: absolute;
+    bottom: -120px;
+    width: 100%;
+  }
 }
 
 .footer-app-links__item {
@@ -122,6 +166,13 @@ body {
 }
 .footer-app-links__item img {
   width: 108px;
+}
+
+@media (max-width: 650px) {
+  .footer-social-container {
+    position: absolute;
+    bottom: 0;
+  }
 }
 
 .footer-social-links__item {
@@ -150,12 +201,34 @@ body {
   clear: both;
   display: table;
 }
+@media (max-width: 940px) {
+  .footer-text-links {
+    width: 60%;
+  }
+}
+@media (max-width: 650px) {
+  .footer-text-links {
+    float: none;
+    width: 100%;
+  }
+}
 
 .footer-text-links__col {
   float: left;
   width: 25%;
   box-sizing: border-box;
   padding-left: 15px;
+}
+@media (max-width: 940px) {
+  .footer-text-links__col {
+    width: 50%;
+  }
+}
+@media (max-width: 650px) {
+  .footer-text-links__col {
+    padding-left: 0;
+    padding-right: 10px;
+  }
 }
 
 .h2-footer {
@@ -175,10 +248,16 @@ body {
 .footer-legal {
   position: relative;
   border-top: 1px solid #B0B3B5;
-  margin-top: 40px;
+  margin-top: 20px;
   font-size: 13px;
   text-align: right;
   padding: 20px 0 10px;
+}
+@media (max-width: 650px) {
+  .footer-legal {
+    text-align: center;
+    padding: 82px 0 18px;
+  }
 }
 
 .shyft-logo-footer {
@@ -187,9 +266,26 @@ body {
   top: 10px;
   width: 116px;
 }
+@media (max-width: 650px) {
+  .shyft-logo-footer {
+    display: none;
+  }
+}
 
 .footer-legal-link {
   padding-left: 20px;
+}
+@media (max-width: 650px) {
+  .footer-legal-link {
+    padding: 0 10px;
+  }
+}
+@media (max-width: 650px) {
+  .footer-legal-link.-copyright {
+    position: absolute;
+    bottom: 0;
+    padding: 0;
+  }
 }
 
 /* forms styles
