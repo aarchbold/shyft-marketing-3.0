@@ -1,0 +1,15 @@
+/* Global layout styles
+*/
+
+body {
+    background-color: $color-site-bg;
+}
+
+.page-outer {
+    width: 100%;
+}
+
+.page-inner {
+    margin: 0 auto;
+    max-width: 1120px;
+}

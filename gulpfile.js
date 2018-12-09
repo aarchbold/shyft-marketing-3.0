@@ -65,7 +65,7 @@ gulp.task('autoprefixer', function () {
 
 // Rerun the tasks when a file changes
 gulp.task('watch', function() {
-    gulp.watch(config.htmlSrc + '/*.html', ['fileinclude']);
+    gulp.watch(config.htmlSrc + '/**/*.html', ['fileinclude']);
     gulp.watch(config.sassPath + '/**/*.scss', ['sass']);
     gulp.watch(config.cssPath + '/*.css', ['autoprefixer']);
     gulp.watch(config.vendorsPath + '/*.js', ['vendors']);
