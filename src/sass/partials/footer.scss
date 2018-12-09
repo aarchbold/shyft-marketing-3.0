@@ -5,4 +5,113 @@
     background-color: $color-footer-bg;
     box-sizing: border-box;
     padding: 75px 0 20px;
+    font-size: 14px;
+    a {
+        transition: all 0.25s;
+        color: $color-footer-link;
+        text-decoration: none;
+        &:hover {
+            color: $color-shyft-brand;
+        }
+    }
+}
+
+.footer-row {
+    &:after {
+        content: '';
+        clear: both;
+        display: table;
+    }
+}
+
+.footer-download-link {
+    float: left;
+    width: 30%;
+}
+
+.footer-download-link__form {
+    margin-bottom: 20px;
+
+    input {
+        margin-right: 6px;
+    }
+}
+
+.footer-app-links {
+    margin-bottom: 40px;
+}
+
+.footer-app-links__item {
+    padding-right: 6px;
+    img {
+        width: 108px;
+    }
+}
+
+.footer-social-links__item {
+    transition: all 0.25s;
+    display: inline-block;
+    margin-right: 4px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    box-shadow: $drop-shadow-icons;
+    opacity: 1;
+    img {
+        display: block;
+    }
+    &:hover {
+        opacity: 0.6;
+    }
+}
+
+.footer-text-links {
+    float: left;
+    width: 70%;
+    &:after {
+        content: '';
+        clear: both;
+        display: table;
+    }
+}
+
+.footer-text-links__col {
+    float: left;
+    width: 25%;
+    box-sizing: border-box;
+    padding-left: 15px;
+}
+
+.h2-footer {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.footer-link-list {
+    padding-bottom: 20px;
+    li {
+        line-height: 1.6;
+        padding-bottom: 8px;
+    }
+}
+
+.footer-legal {
+    position: relative;
+    border-top: 1px solid $color-footer-border;
+    margin-top: 40px;
+    font-size: 13px;
+    text-align: right;
+    padding: 20px 0 10px;
+}
+
+.shyft-logo-footer {
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 116px;
+}
+
+.footer-legal-link {
+    padding-left: 20px;
 }

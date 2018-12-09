@@ -1,0 +1,15 @@
+/* forms styles
+*/
+
+input[type=text], input[type=email] {
+    transition: all 0.25s;
+    background-color: $color-site-bg;
+    border-radius: 4px;
+    font-size: 14px;
+    border: 1px solid $color-footer-border;
+    padding: 5px 8px;
+    &:focus {
+        outline: none;
+        border: 1px solid $color-shyft-brand;
+    }
+}

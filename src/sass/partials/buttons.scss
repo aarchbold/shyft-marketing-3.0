@@ -1,0 +1,21 @@
+/* button styles
+*/
+
+.button {
+    transition: all 0.25s;
+    display: inline-block;
+    margin: 0;
+    padding: 8px 20px;
+    border-radius: 5px;
+    color: white;
+    background-color: $color-shyft-brand;
+    border: 1px solid $color-shyft-brand;
+    cursor: pointer;
+    opacity: 1;
+    &:focus {
+        outline: none;
+    }
+    &:hover {
+        opacity: 0.7;
+    }
+}
