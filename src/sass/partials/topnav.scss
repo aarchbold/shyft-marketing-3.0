@@ -23,6 +23,9 @@
     padding: 13px 0;
     text-align: center;
     cursor: pointer;
+    @media (min-width: $breakpoint-900) {
+        display: none;
+    }
 }
 
 .topnav-toggle__close {
@@ -41,10 +44,49 @@
     z-index: 100;
     border-top: 4px solid $color-footer-bg;
     display: none;
+    @media (min-width: $breakpoint-900) {
+        right: 10px;
+        display: block;
+        top: 35px;
+        border: none;
+        max-width: 613px;
+    }
 }
 
 .topnav-menu__top {
     position: relative;
+    @media (min-width: $breakpoint-900) {
+        display: inline-block;
+        &.-contact-us {
+            display: none;
+        }
+        &.-login {
+            a {
+                border-radius: 6px;
+                padding: 8px 40px 8px 10px;
+                border: 1px solid $color-nav-color;
+                position: relative;
+                &:hover {
+                    .login-icon-stroke {
+                        stroke: $color-shyft-brand;
+                    }
+                }
+                svg {
+                    display: block;
+                    position: absolute;
+                    top: 8px;
+                    right: 8px;
+                }
+                .login-icon-stroke {
+                    transition: all 0.25s;
+                    stroke: $color-nav-color;
+                }
+            }
+            &:after {
+                display: none;
+            }
+        }
+    }
     a {
         transition: all 0.25s;
         display: block;
@@ -57,6 +99,15 @@
         &:hover {
             color: $color-shyft-brand;
         }
+        svg {
+            display: none;
+        }
+        @media (min-width: $breakpoint-900) {
+            display: inline-block;
+            font-size: 16px;
+            border: none;
+            padding: 14px 40px 14px 0
+        }
     }
     &.-open {
         a {
@@ -67,6 +118,11 @@
             border: solid $color-shyft-brand;
             border-width: 0 2px 2px 0;
             transform: rotate(-135deg);
+            @media (min-width: $breakpoint-900) {
+                border-width: 0 1px 1px 0;
+                top: 21px;
+                padding: 3px;
+            }
         }
         .topnav-menu__subnav {
             display: block;
@@ -83,6 +139,12 @@
         display: inline-block;
         padding: 4px;
         transform: rotate(45deg);
+        @media (min-width: $breakpoint-900) {
+            border-width: 0 1px 1px 0;
+            top: 17px;
+            right: 24px;
+            padding: 3px;
+        }
     }
 }
 
@@ -102,6 +164,48 @@
         }
         &:hover {
             color: $color-shyft-brand !important;
+        }
+    }
+    @media (min-width: $breakpoint-900) {
+        position: absolute;
+        left: -50%;
+        padding: 5px 10px;
+        border: 1px solid $color-footer-bg;
+        border-radius: 6px;
+        background-color: white;
+        min-width: 160px;
+        box-shadow: $drop-shadow-menu;
+        a {
+            display: block;
+            border: none;
+            font-size: 14px;
+            text-transform: none;
+            font-weight: normal;
+            line-height: 1.4;
+            padding: 6px 5px;
+        }
+        &:after, &:before {
+            bottom: 100%;
+            left: 50%;
+            border: solid transparent;
+            content: " ";
+            height: 0;
+            width: 0;
+            position: absolute;
+            pointer-events: none;
+        }
+        
+        &:after {
+            border-color: rgba(136, 183, 213, 0);
+            border-bottom-color: white;
+            border-width: 6px;
+            margin-left: -6px;
+        }
+        &:before {
+            border-color: rgba(0, 0, 0, 0);
+            border-bottom-color: $color-footer-bg;
+            border-width: 9px;
+            margin-left: -9px;
         }
     }
 }
