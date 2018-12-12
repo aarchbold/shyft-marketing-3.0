@@ -419,7 +419,11 @@ body {
   }
 }
 .topnav-menu__top.-open .topnav-menu__subnav {
+  opacity: 1;
+  transform: translateY(0px);
   display: block;
+  height: auto;
+  overflow: visible;
 }
 .topnav-menu__top:after {
   transition: all 0.15s;
@@ -463,6 +467,9 @@ body {
 }
 @media (min-width: 900px) {
   .topnav-menu__subnav {
+    transition: all 0.25s;
+    opacity: 0;
+    transform: translateY(-10px);
     position: absolute;
     left: -50%;
     padding: 5px 10px;
@@ -506,7 +513,9 @@ body {
 }
 
 .topnav-menu__subnav {
-  display: none;
+  overflow: hidden;
+  opacity: 0;
+  height: 1px;
 }
 
 /* forms styles

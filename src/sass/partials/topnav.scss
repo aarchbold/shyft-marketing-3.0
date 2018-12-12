@@ -125,7 +125,11 @@
             }
         }
         .topnav-menu__subnav {
+            opacity: 1;
+            transform: translateY(0px);
             display: block;
+            height: auto;
+            overflow: visible;
         }
     }
     &:after {
@@ -167,6 +171,9 @@
         }
     }
     @media (min-width: $breakpoint-900) {
+        transition: all 0.25s;
+        opacity: 0;
+        transform: translateY(-10px);
         position: absolute;
         left: -50%;
         padding: 5px 10px;
@@ -211,5 +218,8 @@
 }
 
 .topnav-menu__subnav {
-    display: none;
+    overflow: hidden;
+    opacity: 0;
+    height: 1px;
+    // display: none;
 }
