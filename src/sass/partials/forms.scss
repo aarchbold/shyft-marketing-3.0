@@ -12,4 +12,7 @@ input[type=text], input[type=email] {
         outline: none;
         border: 1px solid $color-shyft-brand;
     }
+    &:disabled {
+        opacity: 0.5;
+    }
 }
