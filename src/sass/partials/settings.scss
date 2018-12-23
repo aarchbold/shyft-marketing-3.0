@@ -7,17 +7,24 @@ $breakpoint-940: 940px;
 $breakpoint-650: 650px;
 $breakpoint-phablet: 600px;
 $breakpoint-tablet: 770px;
+$breakpoint-air: 1291px;
 
 // branded colors
 $color-site-bg: white;
 $color-footer-bg: #f0f4f7;
 $color-topnav-cta-bg: #E9EDEF;
 $color-main-font: #141414;
+$color-body-font: #434E5A;
 $color-footer-link: #6B7C93;
 $color-shyft-brand: #FC5858;
+$color-shyft-brand-alternate: #5E72E4;
 $color-footer-border: #B0B3B5;
 $color-nav-color: #1C1D1E;
+$color-hr: #979797;
+$color-header-bg: #F3F3F3;
 
 // shadows
 $drop-shadow-icons: 5px 5px 22px -6px rgba(0, 0, 0, 0.5);
+$drop-shadow-button: 5px 5px 22px -6px rgba(252, 88, 88, 0.8);
+$drop-shadow-alternate-button: 5px 5px 22px -6px rgba(94, 114, 228, 0.8);
 $drop-shadow-menu: 3px 3px 29px -9px rgba(0, 0, 0, 0.4);

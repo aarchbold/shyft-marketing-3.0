@@ -67,6 +67,7 @@
                 border: 1px solid $color-nav-color;
                 position: relative;
                 &:hover {
+                    border: 1px solid $color-shyft-brand;
                     .login-icon-stroke {
                         stroke: $color-shyft-brand;
                     }
@@ -153,6 +154,7 @@
 }
 
 .topnav-menu__subnav {
+    display: block;
     padding: 0 20px;
     border-bottom: 6px solid $color-footer-bg;
     border-top: 2px solid $color-footer-bg;
@@ -171,6 +173,7 @@
         }
     }
     @media (min-width: $breakpoint-900) {
+        display: none;
         transition: all 0.25s;
         opacity: 0;
         transform: translateY(-10px);

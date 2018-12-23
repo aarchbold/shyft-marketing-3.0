@@ -1,0 +1,41 @@
+/* tiles layout styles
+*/
+
+.tile-row {
+    margin-top: 50px;
+    &:after {
+        content: '';
+        clear: both;
+        display: table;
+    }
+}
+
+.tile {
+    position: relative;
+    float: left;
+}
+
+.tile-col14 {
+    width: 25%;
+}
+
+.tile-inner {
+    min-height: 160px;
+    border-radius: 10px;
+    padding: 20px 20px 40px;
+    margin: 0 10px;
+    box-shadow: $drop-shadow-menu;
+    &.-border-top-retail {
+        border-top: 10px solid #9EE6F7;
+    }
+    &.-border-distribution {
+        border-top: 10px solid #FFF2B2;
+    }
+    &.-border-food {
+        border-top: 10px solid #A6E6C4;
+    }
+    &.-border-grocery {
+        border-top: 10px solid #FEBCBC;
+    }
+}
+

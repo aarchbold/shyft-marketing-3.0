@@ -1,7 +1,11 @@
 /* forms styles
 */
 
-input[type=text], input[type=email] {
+input[type=text] {
+    border: 1px solid $color-footer-border;
+}
+
+footer input[type=text], footer input[type=email] {
     transition: all 0.25s;
     background-color: $color-site-bg;
     border-radius: 4px;

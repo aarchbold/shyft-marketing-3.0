@@ -1,0 +1,95 @@
+/* Home layout styles
+*/
+
+.home-hero__inner {
+    position: relative;
+    padding-right: 50%;
+    padding: 0 45% 80px 20px;
+    margin-top: 80px;
+    line-height: 1.2;
+    box-sizing: border-box;
+    min-height: 500px;
+}
+
+.home-hero__subheader {
+    padding: 40px 0 60px;
+    font-size: 20px;
+}
+
+.home-hero__image {
+    position: absolute;
+    right: 60px;
+    top: -30px;
+    width: 335px;
+}
+
+.client-logos {
+    padding: 80px 0;
+    text-align: center;
+    img {
+        position: relative;
+        width: 20%;
+        margin: 0 12px;
+    }
+}
+
+.client-techcrunch {
+    top: -5px;
+}
+
+.client-wsj {
+    top: -8px;
+}
+
+.client-retail-dive {
+    top: 2px;
+}
+
+.home-empower {
+    max-width: 1000px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 80px 20px;
+    text-align: center;
+    p {
+        margin-bottom: 30px;
+    }
+}
+
+.home-solutions, .home-features {
+    padding: 80px 20px;
+}
+
+.tile-solution__image {
+    margin-bottom: 20px;
+}
+
+.tile-solution__header {
+    font-family: 'TruenoSemiBold';
+    font-size: 24px;
+    line-height: 1.2;
+}
+
+.tile-footer__link {
+    position: relative;
+    transition: all 0.25s;
+    position: absolute;
+    bottom: 20px;
+    font-size: 14px;
+    color: $color-shyft-brand;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding-right: 24px;
+    &:hover {
+        opacity: 0.7;   
+    }
+    &:after {
+        content: url('../images/icons/icon-text-link.svg');
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 16px;
+        height: 16px;
+        display: block;
+    }
+}

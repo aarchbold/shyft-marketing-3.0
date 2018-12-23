@@ -1,0 +1,10 @@
+/* animations styles
+*/
+
+.animate-slide {
+    transition: all 0.35s;
+}
+
+.fly-from-right {
+    transform: translateX(1000px);
+}
