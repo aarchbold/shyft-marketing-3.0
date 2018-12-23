@@ -93,3 +93,46 @@
         display: block;
     }
 }
+
+.tile-feature__image {
+    position: absolute;
+    left: 50%;
+    top: -40px;
+    width: 80px;
+    height: 80px;
+    transform: translateX(-50%);
+    background-color: $color-site-bg;
+    border-radius: 50%;
+    box-shadow: $drop-shadow-menu;
+    .tile-feature__svg {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+}
+.tile-feature__ext-link {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+}
+
+.tile-feature__header {
+    font-family: 'TruenoSemiBold';
+    font-size: 16px;
+    line-height: 1.2;
+    margin-bottom: 18px;
+    margin-top: 60px;
+}
+
+.tile-feature__description {
+    font-size: 16px;
+    line-height: 1.3;
+}
+
+.feature-row {
+    padding: 30px 0;
+    .tile-inner {
+        min-height: 200px;
+    }
+}
