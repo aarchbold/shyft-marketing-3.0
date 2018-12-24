@@ -15,30 +15,43 @@ function isElementInViewport (el) {
 }
 
 $.fn.flyInFromRight = function() {
-    $this = $(this),
-        $elements = $('.fly-from-right', $this);
+    $this = $(this);
 
-    window.setTimeout(function() {
-        $elements.removeClass('fly-from-right');
-    },400);
+    $(window).on('DOMContentLoaded load resize scroll', function() {
+        var delay = 100;
+        $this.each(function(i,e) {
+            console.log(isElementInViewport($(e).parent()));
+            if (isElementInViewport($(e).parent())) {
+                delay = delay + 100;
+                window.setTimeout(function() {
+                    $(e).removeClass('fly-from-right');
+                },delay);
+            }
+        })
 
+    }); 
+}
 
-    // console.log(isElementInViewport($this));
-    // console.log($this);
-    // console.log($elements);
-    // console.log($this);
+$.fn.flyInFromLeft = function() {
+    $this = $(this);
 
-    // $(window).on('DOMContentLoaded load resize scroll', function() {
-    //     console.log(isElementInViewport($this));
-    //     if (isElementInViewport($this)) {
-            
-    //     } else {
-    //         //$elements.addClass('fly-from-right');
-    //     }
-    // }); 
+    $(window).on('DOMContentLoaded load resize scroll', function() {
+        var delay = 100;
+        $this.each(function(i,e) {
+            console.log(isElementInViewport($(e).parent()));
+            if (isElementInViewport($(e).parent())) {
+                delay = delay + 100;
+                window.setTimeout(function() {
+                    $(e).removeClass('fly-from-left');
+                },delay);
+            }
+        })
+
+    }); 
 }
 
 $(function(){    
-    $('.home-hero__inner').flyInFromRight();
+    $('.animate-slide').flyInFromRight();
+    $('.animate-slide').flyInFromLeft();
     //$('.home-solutions').flyInFromRight();
 });

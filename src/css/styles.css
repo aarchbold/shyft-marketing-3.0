@@ -1138,6 +1138,10 @@ footer input[type=text]:disabled, footer input[type=email]:disabled {
   transform: translateX(1000px);
 }
 
+.fly-from-left {
+  transform: translateX(-1000px);
+}
+
 /* tiles layout styles
 */
 .tile-row {

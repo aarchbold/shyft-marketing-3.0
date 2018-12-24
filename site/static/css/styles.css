@@ -1255,6 +1255,12 @@ footer input[type=text]:disabled, footer input[type=email]:disabled {
   transform: translateX(1000px);
 }
 
+.fly-from-left {
+  -webkit-transform: translateX(-1000px);
+  -ms-transform: translateX(-1000px);
+  transform: translateX(-1000px);
+}
+
 /* tiles layout styles
 */
 .tile-row {
