@@ -20,7 +20,6 @@ $.fn.flyInFromRight = function() {
     $(window).on('DOMContentLoaded load resize scroll', function() {
         var delay = 100;
         $this.each(function(i,e) {
-            console.log(isElementInViewport($(e).parent()));
             if (isElementInViewport($(e).parent())) {
                 delay = delay + 100;
                 window.setTimeout(function() {
@@ -38,7 +37,6 @@ $.fn.flyInFromLeft = function() {
     $(window).on('DOMContentLoaded load resize scroll', function() {
         var delay = 100;
         $this.each(function(i,e) {
-            console.log(isElementInViewport($(e).parent()));
             if (isElementInViewport($(e).parent())) {
                 delay = delay + 100;
                 window.setTimeout(function() {
@@ -54,6 +52,28 @@ $(function(){
     $('.animate-slide').flyInFromRight();
     $('.animate-slide').flyInFromLeft();
     //$('.home-solutions').flyInFromRight();
+});
+$(function(){    
+    $('.home-testimonials .tile-row').slick({
+        dots: true,
+        slidesToShow: 3,
+        responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2
+              }
+            },
+            {
+            breakpoint: 770,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+            }
+        ]
+    });
 });
 // function getParam(name) {
 //     SCH = document.location.search;
@@ -122,17 +142,15 @@ $.fn.handleTextLink = function() {
 
     $button.click(function(e){
         submitting();
-        console.log($success);
         branch.sendSMS($form.val(), linkData, options, callback);
     });
 
 }
 
 $(function(){
-    console.log($);
-    console.log('hello');
-    
-    $('#downloadLinkForm').handleTextLink();
+    $('#downloadLinkForm').handleTextLink({
+        dots: true
+    });
 });
 // Handles all the stuffs with the request demo modal
 $.fn.handleModal = function() {

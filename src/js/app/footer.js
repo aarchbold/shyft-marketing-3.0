@@ -65,15 +65,13 @@ $.fn.handleTextLink = function() {
 
     $button.click(function(e){
         submitting();
-        console.log($success);
         branch.sendSMS($form.val(), linkData, options, callback);
     });
 
 }
 
 $(function(){
-    console.log($);
-    console.log('hello');
-    
-    $('#downloadLinkForm').handleTextLink();
+    $('#downloadLinkForm').handleTextLink({
+        dots: true
+    });
 });

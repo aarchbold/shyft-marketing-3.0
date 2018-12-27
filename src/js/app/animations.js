@@ -20,7 +20,6 @@ $.fn.flyInFromRight = function() {
     $(window).on('DOMContentLoaded load resize scroll', function() {
         var delay = 100;
         $this.each(function(i,e) {
-            console.log(isElementInViewport($(e).parent()));
             if (isElementInViewport($(e).parent())) {
                 delay = delay + 100;
                 window.setTimeout(function() {
@@ -38,7 +37,6 @@ $.fn.flyInFromLeft = function() {
     $(window).on('DOMContentLoaded load resize scroll', function() {
         var delay = 100;
         $this.each(function(i,e) {
-            console.log(isElementInViewport($(e).parent()));
             if (isElementInViewport($(e).parent())) {
                 delay = delay + 100;
                 window.setTimeout(function() {

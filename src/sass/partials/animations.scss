@@ -6,9 +6,15 @@
 }
 
 .fly-from-right {
-    // transform: translateX(1000px);
+    transform: translateX(1500px);
+    @media (max-width: $breakpoint-900) {
+        transform: translateX(0);
+    }
 }
 
 .fly-from-left {
-    // transform: translateX(-1000px);
+    transform: translateX(-1500px);
+    @media (max-width: $breakpoint-900) {
+        transform: translateX(0);
+    }
 }

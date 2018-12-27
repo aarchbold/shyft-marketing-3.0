@@ -112,6 +112,10 @@
         height: 16px;
         display: block;
     }
+    @media (max-width: $breakpoint-tablet) {
+        left: 50%;
+        transform: translateX(-50%);
+    }
 }
 
 .tile-feature__image {
@@ -133,6 +137,12 @@
     @media (max-width: $breakpoint-900) {
         top: 0px;
     }
+    @media (max-width: $breakpoint-tablet) {
+        left: 74px;
+        top: 63px;
+        width: 70px;
+        height: 70px;
+    }
 }
 .tile-feature__ext-link {
     position: absolute;
@@ -149,6 +159,10 @@
     line-height: 1.2;
     margin-bottom: 18px;
     margin-top: 60px;
+    @media (max-width: $breakpoint-tablet) {
+        margin-top: 8px;
+        margin-bottom: 10px;
+    }
 }
 
 .tile-feature__description {
@@ -163,6 +177,11 @@
         @media (max-width: $breakpoint-900) {
             margin-bottom: 40px;
         }
+        @media (max-width: $breakpoint-tablet) {
+            min-height: auto;
+            padding-left: 110px;
+            text-align: left;
+        }
     }
     @media (max-width: $breakpoint-900) {
         padding: 0;
@@ -173,6 +192,8 @@
 }
 
 .home-testimonials {
+    max-width: 1400px;
+    margin: 0 auto;
     padding: 80px 0 160px;
 }
 
