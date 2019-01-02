@@ -1,6 +1,14 @@
 /* Home layout styles
 */
 
+.background-container__home-hero {
+    background: transparent url('../images/bgs/bg-home-hero.jpg') 100% 50% no-repeat;
+}
+
+.background-container__empower-section {
+    background: transparent url('../images/bgs/bg-empower-section.jpg') 50% 50% no-repeat;
+}
+
 .home-hero__inner {
     position: relative;
     padding-right: 50%;

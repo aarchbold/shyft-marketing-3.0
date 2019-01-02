@@ -1198,6 +1198,14 @@ footer input[type=text]:disabled, footer input[type=email]:disabled {
 
 /* Home layout styles
 */
+.background-container__home-hero {
+  background: transparent url("../images/bgs/bg-home-hero.jpg") 100% 50% no-repeat;
+}
+
+.background-container__empower-section {
+  background: transparent url("../images/bgs/bg-empower-section.jpg") 50% 50% no-repeat;
+}
+
 .home-hero__inner {
   position: relative;
   padding-right: 50%;
@@ -1533,6 +1541,7 @@ footer input[type=text]:disabled, footer input[type=email]:disabled {
   margin: 0 10px;
   -webkit-box-shadow: 3px 3px 29px -9px rgba(0, 0, 0, 0.4);
   box-shadow: 3px 3px 29px -9px rgba(0, 0, 0, 0.4);
+  background-color: white;
 }
 .tile-inner.-border-top-retail {
   border-top: 10px solid #9EE6F7;
