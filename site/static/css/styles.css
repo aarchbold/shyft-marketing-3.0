@@ -1203,7 +1203,15 @@ footer input[type=text]:disabled, footer input[type=email]:disabled {
 }
 
 .background-container__empower-section {
-  background: transparent url("../images/bgs/bg-empower-section.jpg") 50% 50% no-repeat;
+  background: transparent url("../images/bgs/bg-empower-section.jpg") 50% 100% no-repeat;
+}
+
+.background-container__features-section {
+  background: transparent url("../images/bgs/bg-features-section.jpg") 50% 0% no-repeat;
+}
+
+.background-container__testimonials-section {
+  background: transparent url("../images/bgs/bg-testimonials.jpg") 50% 100% no-repeat;
 }
 
 .home-hero__inner {
